@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang = "es">
+    
+    <head>
+        <title>Lab 05 Programación Orientada a Eventos</title>
+    </head>
+    
+    <body onload="crearTabla()">
+    <div class='page'>
+            <header>
+                <h1>Laboratorio 05<br/>Programación Orientada a Eventos</h1>
+                <h3>Miguel Angel Marines Olvera &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A01705317 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A01705317@itesm.mx</h3>
+                
+                <hr>
+                
+                <button id='myButton'  onclick="location.href = 'passvalid.html'">Verificar Contraseña</button>
+                
+                <button id='myButton'  onclick="location.href = 'tienda.html'">Comprar Paquetes</button>
+                
+                <button id='myButton'  onclick="location.href = 'libre.html'">Registrar Persona</button>
+                
+                <hr>
+            </header>
+            
+            
+            <article>
+                Contraseña:<input type="password" id="pass1" size="8">
+                Verificacion de Contraseña:	<input type="password" id="pass2" size="8">
+                <br><br>
+                <button name="" onclick="contraseña()"> Verificar</button>
+            </article>
+            
+            <h1>Paquetes de Actividades</h1>
+            <table>
+                <tr>
+                    <th>
+                        <img src="" id="pic"/>
+                        <h2>Cuatrimoto A Travez de la Selva</h2>
+                        <button type="button" onclick="aletas()">Más información</button>
+                        <br>
+                        <h2> Precio: $799.00<br/>Comprando más de 2: $599.00<br/>Cantidad: </h2>
+                        <input type="number" id="rb" min="0" max="10"x>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <img src="" id="pic"/>
+                        <h2>Rafting and Waterfall</h2>
+                        <button type="button" onclick="aletas()">Más información</button>
+                        <br>
+                        <h2> Precio: $345.00<br/>Comprando más de 4: $299.00<br/>Cantidad: </h2>
+                        <input type="number" id="sc" min="0" max="10"x>
+                    </th>
+                </tr>
+                  <tr>
+                    <th>
+                        <img src="" id="pic"/>
+                        <h2>Paracaidismo</h2>
+                        <button type="button" onclick="aletas()">Más información</button>
+                        <br>
+                        <h2> Precio: $3459.00<br/>Comprando más de 3: $2999.00<br/>Cantidad: </h2>
+                        <input type="number" id="airp" min="0" max="5">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <img src="" id="pic"/>
+                        <h2>Tirolesa</h2>
+                        <button type="button" onclick="aletas()">Más información</button>
+                        <br>
+                        <h2> Precio: $3459.00<br/>Comprando más de 3: $2999.00<br/>Cantidad: </h2>
+                        <input type="number" id="airp" min="0" max="5">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <img src="" id="pic"/>
+                        <h2>Escalada en Roca</h2>
+                        <button type="button" onclick="aletas()">Más información</button>
+                        <br>
+                        <h2> Precio: $3459.00<br/>Comprando más de 3: $2999.00<br/>Cantidad: </h2>
+                        <input type="number" id="airp" min="0" max="5">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <img src="" id="pic"/>
+                        <h2>Bungee Jumping</h2>
+                        <button type="button" onclick="aletas()">Más información</button>
+                        <br>
+                        <h2> Precio: $3459.00<br/>Comprando más de 3: $2999.00<br/>Cantidad: </h2>
+                        <input type="number" id="airp" min="0" max="5">
+                    </th>
+                </tr>
+            </table>
+
+            <input type="button" id ="myButton" class ="myButton" value="Checkout">
+            
+            <article id="article">
+                <h2 id="subtot"></h2><h2 id="iva"></h2><h2 id="tot"></h2>
+            </article>
+            
+            
+        </div>
+        
+        <footer>
+            <h3>Editor de HTML: Brackets</h3>
+            <h3>Enlace al sitio del editor: <a href="http://brackets.io/">Brackets</a></h3>
+        </footer>
+       
+        <meta charset='UTF-8' />
+        <meta name="viewport" content="width=device-width initial-scale=1.0, maximum-scale=1.0">
+    
+    </body>
+    
+</html>
