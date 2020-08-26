@@ -7,103 +7,151 @@
     </head>
     
     <body onload="crearTabla()">
-    <div class='page'>
-            <header>
-                <h1>Laboratorio 05<br/>Programación Orientada a Eventos</h1>
-                <h3>Miguel Angel Marines Olvera &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A01705317 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A01705317@itesm.mx</h3>
-                
-                <hr>
-                
-                <button id='myButton'  onclick="location.href = 'passvalid.html'">Verificar Contraseña</button>
-                
-                <button id='myButton'  onclick="location.href = 'tienda.html'">Comprar Paquetes</button>
-                
-                <button id='myButton'  onclick="location.href = 'libre.html'">Registrar Persona</button>
-                
-                <hr>
-            </header>
             
-            
-            <article>
-                Contraseña:<input type="password" id="pass1" size="8">
-                Verificacion de Contraseña:	<input type="password" id="pass2" size="8">
-                <br><br>
-                <button name="" onclick="contraseña()"> Verificar</button>
-            </article>
-            
-            <h1>Paquetes de Actividades</h1>
-            <table>
-                <tr>
-                    <th>
-                        <img src="" id="pic"/>
-                        <h2>Cuatrimoto A Travez de la Selva</h2>
-                        <button type="button" onclick="aletas()">Más información</button>
-                        <br>
-                        <h2> Precio: $799.00<br/>Comprando más de 2: $599.00<br/>Cantidad: </h2>
-                        <input type="number" id="rb" min="0" max="10"x>
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <img src="" id="pic"/>
-                        <h2>Rafting and Waterfall</h2>
-                        <button type="button" onclick="aletas()">Más información</button>
-                        <br>
-                        <h2> Precio: $345.00<br/>Comprando más de 4: $299.00<br/>Cantidad: </h2>
-                        <input type="number" id="sc" min="0" max="10"x>
-                    </th>
-                </tr>
-                  <tr>
-                    <th>
-                        <img src="" id="pic"/>
-                        <h2>Paracaidismo</h2>
-                        <button type="button" onclick="aletas()">Más información</button>
-                        <br>
-                        <h2> Precio: $3459.00<br/>Comprando más de 3: $2999.00<br/>Cantidad: </h2>
-                        <input type="number" id="airp" min="0" max="5">
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <img src="" id="pic"/>
-                        <h2>Tirolesa</h2>
-                        <button type="button" onclick="aletas()">Más información</button>
-                        <br>
-                        <h2> Precio: $3459.00<br/>Comprando más de 3: $2999.00<br/>Cantidad: </h2>
-                        <input type="number" id="airp" min="0" max="5">
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <img src="" id="pic"/>
-                        <h2>Escalada en Roca</h2>
-                        <button type="button" onclick="aletas()">Más información</button>
-                        <br>
-                        <h2> Precio: $3459.00<br/>Comprando más de 3: $2999.00<br/>Cantidad: </h2>
-                        <input type="number" id="airp" min="0" max="5">
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <img src="" id="pic"/>
-                        <h2>Bungee Jumping</h2>
-                        <button type="button" onclick="aletas()">Más información</button>
-                        <br>
-                        <h2> Precio: $3459.00<br/>Comprando más de 3: $2999.00<br/>Cantidad: </h2>
-                        <input type="number" id="airp" min="0" max="5">
-                    </th>
-                </tr>
-            </table>
-
-            <input type="button" id ="myButton" class ="myButton" value="Checkout">
-            
-            <article id="article">
-                <h2 id="subtot"></h2><h2 id="iva"></h2><h2 id="tot"></h2>
-            </article>
-            
-            
-        </div>
+        <header>
+            <h1>Laboratorio 05<br/>Programación Orientada a Eventos</h1>
+            <h3>Miguel Angel Marines Olvera &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A01705317 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A01705317@itesm.mx</h3>
+            <hr>
+            Contraseña:<input type="password" id="password1">
+            Verificar Contraseña:<input type="password" id="password2">
+            <br><br>
+            <button name="" onclick="comprobar()"> Verificar</button>
+            <hr>
+        </header>
         
+        <article><br><h5>Actividades</h5></article>
+           
+        <table>
+            <tr>
+                <th>
+                    <img src="cuatrimoto.jpg"/>
+                    <h2>Cuatrimoto en Selva</h2>
+                    <div id="Cuatrimoto"></div>
+                    <button type="button" onclick="cuatrimoto()">Más información</button>
+                    <br>
+                    <h2> Precio: $999.00<br/>Comprando más de 2: $799.00<br/>Cantidad:</h2>
+                    <input type="number" id="cuatrimoto" min="0" max="10"x>
+                </th>
+                <th>
+                    <img src="raft.jpg"/>
+                    <h2>Rafting</h2>
+                    <div id="Raft"></div>
+                    <button type="button" onclick="raft()">Más información</button>
+                    <br>
+                    <h2> Precio: $799.00<br/>Comprando más de 2: $599.00<br/>Cantidad:</h2>
+                    <input type="number" id="raft" min="0" max="10"x>
+                </th>
+                <th>
+                    <img src="paracaidas.jpg"/>
+                    <h2>Paracaidismo</h2>
+                    <div id="Paracaidas"></div>
+                    <button type="button" onclick="paracaidas()">Más información</button>
+                    <br>
+                    <h2> Precio: $3,500.00<br/>Comprando más de 2: $3,000.00<br/>Cantidad:</h2>
+                    <input type="number" id="paracaidismo" min="0" max="10">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <img src="zipline.jpg"/>
+                    <h2>Zipline</h2>
+                    <div id="Zipline"></div>
+                    <button type="button" onclick="zipline()">Más información</button>
+                    <br>
+                    <h2> Precio: $250.00<br/>Comprando más de 2: $200.00<br/>Cantidad:</h2>
+                    <input type="number" id="zipline" min="0" max="20">
+                </th>
+                <th>
+                    <img src="escalada.jpg"/>
+                    <h2>Escalada en Roca</h2>
+                    <div id="Escalada"></div>
+                    <button type="button" onclick="escalada()">Más información</button>
+                    <br>
+                    <h2> Precio: $500.00<br/>Comprando más de 2: $470.00<br/>Cantidad: </h2>
+                    <input type="number" id="escalada" min="0" max="10">
+                </th>
+                <th>
+                    <img src="bungee.jpg"/>
+                    <h2>Bungee Jumping</h2>
+                    <div id="Bungee"></div>
+                    <button type="button" onclick="bungee()">Más información</button>
+                    <br>
+                    <h2> Precio: $999.00<br/>Comprando más de 2: $799.00<br/>Cantidad: </h2>
+                    <input type="number" id="bungee" min="0" max="20">
+                </th>
+            </tr>
+        </table>
+        
+        <input type="button" id ="myButton" class ="myButton" value="Calcular Total" onclick="calcularPago()">
+            
+        <article>
+            <h2 id="subtotal"></h2><h2 id="iva"></h2><h2 id="total"></h2>
+        </article>
+            
+        <header>
+            <h1>Pago</h1>
+        </header>
+        
+        <section onload="crearTabla()">
+        <div class='page'>
+            <h2>Pago con Tarjeta</h2>
+            <form>
+                <label>Nombre</label>
+                <input type="text" id="nombre" maxlength="12" required/>
+                <br>
+                <br>  
+                <label>Apellido</label>
+                <input type="text" id="apellido" maxlength="20" required/>
+                <br>
+                <br>  
+                <label>Servicio Financiero</label>
+                <select>
+                    <option value="Visa">Visa</option>
+                    <option value="MasterCard">MasterCard</option>
+                    <option value="AmericanExpress">American Express</option>
+                </select>
+                <br>
+                <br>
+                <label> No. Tarjeta     </label>
+                <input type="number" id="no_tarjeta" maxlength="16" required/>
+                <br>
+                <br>
+                <label>(Card Verification Value) CVV</label>
+                <input type="number" id="cvv" maxlength="3" required/>
+                <br>
+                <br>
+                <input type="button" id ="myButton" class ="myButton" value="Pagar" onclick="pago()">
+            </form>
+        </div>
+        </section>
+        <br>
+        <br>
+        <header>
+            <h1>Preguntas</h1>
+        </header>
+        <article>
+            <h2>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</h2>
+            <h4>Es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor porque se hace saber a los usuarios del sistema de manera casi inmediata si ha habido un error en el llenado de datos, sin la necesidad de esperar la repuesta del servidor.<br><br>Además se podría decir que usar JavaScript para checar que sean válidos los inputs: Evitar errores de usuario, reduce la carga de procesamiento de los servidores, ya que comprueba todo antes de mandarlo al servidor, esto puede ayudar a reducir costos y mejorar la experiencia del usuario.</h4>
+                
+                
+            <h2 >¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</h2>
+            <h4>Hay varias formas de saltarse la seguridad de validaciones hechas con JavaScript, por ejemplo: La forma más sencilla de deshabilitar la validación para formularios con HTML5 es añadir el atributo novalidate al formulario, se puede hacer un script desde la consola para evitar la validación o se puede modificar la función directamente desde Java Script.</h4>
+                
+            <h2 >Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</h2>
+            <h4>Es una buena practica porque hace una revisión de datos, los valida y se asegura que la información esté en el formato requerido por el servidor, de esta manera se ahorran recursos, se reducen gastos y tiempo.</h4>   
+        </article>
+        <br>
+        <br>
+        <header>
+            <h1>Referencias Bibliograficas</h1>
+        </header>
+        
+        <article>
+            <h4> 1. Validación de formularios de datos. (2020). MDN Web Docs. <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Forms/Validacion_formulario_datos">Sitio web</a></h4>
+            <h4> 2. Script para informar de la seguridad de una clave, con Javascript. (2008). Desarrollo Web. <a href="https://desarrolloweb.com/articulos/script-informar-seguridad-clave-javascript.html">Sitio web</a></h4>
+            <h4> 3. Deshabilitar la validación de elementos HTML5 en un formulario. (2016). Stack Overflow. <a href="https://es.stackoverflow.com/questions/256/deshabilitar-la-validaci%C3%B3n-de-elementos-html5-en-un-formulario">Sitio web</a></h4>        
+        </article>
+            
         <footer>
             <h3>Editor de HTML: Brackets</h3>
             <h3>Enlace al sitio del editor: <a href="http://brackets.io/">Brackets</a></h3>
@@ -111,6 +159,8 @@
        
         <meta charset='UTF-8' />
         <meta name="viewport" content="width=device-width initial-scale=1.0, maximum-scale=1.0">
+        <link rel='stylesheet' href='style.css'/>
+        <script src="funciones.js"></script>
     
     </body>
     
