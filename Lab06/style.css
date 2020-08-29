@@ -1,0 +1,164 @@
+body
+{
+    background-color: white;
+}
+header
+{
+    background-image: url("landscape.jpg");
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px;
+}
+section
+{
+    background-image: url("landscape.jpg");
+
+
+    display: block;
+    padding-bottom: 10px;
+
+    text-align: center;
+}
+article
+{
+    background-color: #ebeef2;
+    color: white;
+    display: block;
+    height: auto;
+    padding: 5px;
+    padding-right: 100px;
+    padding-left: 50px;
+    padding-top: 0px;
+    text-align: center;
+}
+table
+{
+    margin: 1px;
+    font-size: 20px;
+    font-family: Tahoma;
+    color: #F8F8FF;  
+}
+footer
+{
+    text-align: center;
+    background-color: #228B22;;
+    clear: both;
+}
+label
+{
+     font-family: Tahoma;
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+}
+.myButton
+{
+	box-shadow:inset 0px 0px 15px 3px #23395e;
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color:#2e466e;
+	border-radius:17px;
+	border:1px solid #1f2f47;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	padding:6px 13px;
+    margin: 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.myButton:hover
+{
+	background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+	background-color:#415989;
+}
+.myButton:active
+{
+	position:relative;
+	top:1px;
+}
+p
+{
+    font-family: Tahoma;
+    font-size: 15px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;   
+}
+h1
+{
+    font-size: 40px;
+    font-family: Tahoma;
+    color: white;
+}
+h2
+{
+    font-family: Tahoma;
+    font-size: 18px;
+    padding-left: 10px;
+    color: black;
+}
+h3
+{
+    font-family: Tahoma;
+    font-size: 19px;
+    color: white;
+}
+h4
+{
+    font-family: Tahoma;
+    font-size: 12px;
+    padding-left: 10px;
+    color: black;
+}
+input
+{
+    font-family: Tahoma;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.watermark1
+{
+    z-index: -1;
+    position:fixed;
+    top:0px;
+    left:32%;
+    top: 42%;
+    bottom:0px;
+    opacity:0.3;
+}
+.watermark2
+{
+    z-index: -1;
+    position:fixed;
+    top:0px;
+    left:64%;
+    top: 44%;
+    bottom:0px;
+    opacity:0.3;
+}
+.watermark3
+{
+    z-index: -1;
+    position:fixed;
+    top:0px;
+    left:50%;
+    top: 38%;
+    bottom:0px;
+    opacity:0.5;
+}
+#div1
+{
+    float: left;
+    width: 100px;
+    height: 140px;
+    margin: 10px;
+    border: 1px solid orange;
+}
+#drag1
+{
+    width: 100px;
+    height: 140px;
+}

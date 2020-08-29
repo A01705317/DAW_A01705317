@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang = "es">
+    
+    <head>
+        <title>Lab 06 Documentos Dinámicos con JavaScript</title>
+    </head>
+    
+    <body onload="stillThere()">
+        
+        <div class="watermark1">
+            <img id = "fondo" src="watermark1.png">
+        </div>
+        <div class="watermark2">
+            <img id = "fondo" src="watermark2.png">
+        </div>
+        <div class="watermark3">
+            <img id = "fondo" src="watermark3.png">
+        </div>
+            
+        <header>
+            <h1 onmouseover="cambiarTexto(this)">Laboratorio 06<br/>Documentos Dinámicos con JavaScript</h1>
+            <h3 onmouseover="cambiarTexto(this)">Miguel Angel Marines Olvera &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A01705317 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A01705317@itesm.mx</h3>
+            <hr>
+            Contraseña:<input type="password" id="password1">
+            Verificar Contraseña:<input type="password" id="password2">
+            <br><br>
+            <button name="" onclick="comprobar()"> Verificar</button>
+            <hr>
+        </header>
+        
+        <article>
+            <br>
+            <img src="adventure.png" onmouseover="agrandar(this)" onmouseout="regresar(this)"/>
+        </article>
+        
+        <table>
+            <tr>
+                <th>
+                    <img src="cuatrimoto.jpg"/>
+                    <h2>Cuatrimoto en Selva</h2>
+                    <div id="Cuatrimoto"></div>
+                    <button type="button" onclick="cuatrimoto()">Más información</button>
+                    <br>
+                    <h2> Precio: $999.00<br/>Comprando más de 2: $799.00<br/>Cantidad:</h2>
+                    <input type="number" id="cuatrimoto" min="0" max="10"x>
+                </th>
+                <th>
+                    <img src="raft.jpg"/>
+                    <h2>Rafting</h2>
+                    <div id="Raft"></div>
+                    <button type="button" onclick="raft()">Más información</button>
+                    <br>
+                    <h2> Precio: $799.00<br/>Comprando más de 2: $599.00<br/>Cantidad:</h2>
+                    <input type="number" id="raft" min="0" max="10"x>
+                </th>
+                <th>
+                    <img src="paracaidas.jpg"/>
+                    <h2>Paracaidismo</h2>
+                    <div id="Paracaidas"></div>
+                    <button type="button" onclick="paracaidas()">Más información</button>
+                    <br>
+                    <h2> Precio: $3,500.00<br/>Comprando más de 2: $3,000.00<br/>Cantidad:</h2>
+                    <input type="number" id="paracaidismo" min="0" max="10">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <img src="zipline.jpg"/>
+                    <h2>Zipline</h2>
+                    <div id="Zipline"></div>
+                    <button type="button" onclick="zipline()">Más información</button>
+                    <br>
+                    <h2> Precio: $250.00<br/>Comprando más de 2: $200.00<br/>Cantidad:</h2>
+                    <input type="number" id="zipline" min="0" max="20">
+                </th>
+                <th>
+                    <img src="escalada.jpg"/>
+                    <h2>Escalada en Roca</h2>
+                    <div id="Escalada"></div>
+                    <button type="button" onclick="escalada()">Más información</button>
+                    <br>
+                    <h2> Precio: $500.00<br/>Comprando más de 2: $470.00<br/>Cantidad: </h2>
+                    <input type="number" id="escalada" min="0" max="10">
+                </th>
+                <th>
+                    <img src="bungee.jpg"/>
+                    <h2>Bungee Jumping</h2>
+                    <div id="Bungee"></div>
+                    <button type="button" onclick="bungee()">Más información</button>
+                    <br>
+                    <h2> Precio: $999.00<br/>Comprando más de 2: $799.00<br/>Cantidad: </h2>
+                    <input type="number" id="bungee" min="0" max="20">
+                </th>
+            </tr>
+        </table>
+        
+        <input type="button" id ="myButton" class ="myButton" value="Calcular Total" onclick="calcularPago()">
+            
+        <article>
+            <h2 id="subtotal"></h2><h2 id="iva"></h2><h2 id="total"></h2>
+        </article>
+            
+        <header>
+            <h1>Pago</h1>
+        </header>
+        
+        <section onload="crearTabla()">
+        <div class='page'>
+            <h2>Pago con Tarjeta</h2>
+            <form>
+                <label>Nombre</label>
+                <input type="text" id="nombre" maxlength="12" required/>
+                <br>
+                <br>  
+                <label>Apellido</label>
+                <input type="text" id="apellido" maxlength="20" required/>
+                <br>
+                <br>  
+                <label>Servicio Financiero</label>
+                <select>
+                    <option value="Visa">Visa</option>
+                    <option value="MasterCard">MasterCard</option>
+                    <option value="AmericanExpress">American Express</option>
+                </select>
+                <br>
+                <br>
+                <label> No. Tarjeta     </label>
+                <input type="number" id="no_tarjeta" maxlength="16" required/>
+                <br>
+                <br>
+                <label>(Card Verification Value) CVV</label>
+                <input type="number" id="cvv" maxlength="3" required/>
+                <br>
+                <br>
+                <input type="button" id ="myButton" class ="myButton" value="Pagar" onclick="pago()">
+            </form>
+        </div>
+        </section>
+        <br>
+        <br>
+        <header>
+            <h1>Preguntas</h1>
+        </header>
+        <article>
+            <h2>¿Cuáles son las diferencias entre los posibles valores de la propiedad position?</h2>
+            <h4>La propiedad position sirve para posicionar un elemento dentro de la página. Sin embargo, dependiendo de cual sea la propiedad que usemos, el elemento tomará una referencia u otra para posicionarse respecto a ella.<br><br>Los posibles valores que puede adoptar la propiedad position son: static | relative | absolute | fixed | inherit | initial.<br><br>position: static<br>Es el valor que toma un elemento por defecto para posicionarse. Con este valor, el elemento respetará el flujo normal de la página, es decir, se posicionará en el lugar que le corresponde y no tendrá en cuenta los valores para las propiedades top, left, right y bottom.<br><br>position: relative.<br>Mediante este valor podemos posicionar un elemento respecto al flujo normal de la página. Se podría decir que estamos posicionando un elemento tomando como referencia el flujo normal (la posición por defecto) de dicho elemento. Podremos usar top, left, right y bottom para posicionar nuestro elemento tomando como referencia la posición por defecto del elemento.<br><br>position: absolute<br>El elemento con position: absolute no estará dentro del flujo normal de la página y tomará como referencia la ventana del navegador o el elemento posicionado (que tenga cualquier valor de position excepto static) más cercano si es padre del elemento que queremos posicionar. Este valor también aceptará los valores top, left, right y bottom.<br><br>position: fixed<br>Está fuera del flujo normal de la página. Sin embargo, no se debe de confundir con los elementos que están posicionados con position: absolute. A diferencia de estos últimos, los elementos con position: fixed toman como referencia la ventana del navegador y no respetan el tener un contenedor padre que esté posicionado. Además, al hacer scroll en la página, el elemento que esté posicionado como position: fixed seguirá en la misma posición respecto a la ventana del navegador aunque el scroll haya desplazado la página hacia abajo.<br><br>position: inherit<br>Actúa de la misma manera que el resto de propiedades que pueden obtener este valor, hereda el valor para esta propiedad del elemento padre.<br><br>position: initial<br>Actúa de la misma manera que el resto de propiedades que pueden obtener este valor, en este caso haciendo que la propiedad position tome su valor por defecto, por lo que, usando position: initial, sería lo mismo que indicar position: static.<br><br>position: sticky<br>El elemento actúa como si estuviera posicionado con el valor relative hasta que se alcanza un umbral de desplazamiento (en el propio elemento o en el elemento padre), con el cual el elemento pasa a posicionarse como si estuviera posicionado con el valor fixed.</h4>
+                
+                
+            <h2 >¿Cuáles son los valores estándar para la propiedad visibility?</h2>
+            <h4>1. Visible<br>2. Hidden<br>3. Collapse<br>4. Inherit</h4>
+                
+            <h2>¿Qué es el z-index y para qué sirve?</h2>
+            <h4>La propiedad z-index en CSS se utiliza para ordenar los elementos que se superpongan entre sí. Con la propiedad z-index podemos controlar qué elemento iría encima y cual debajo, como si el documento tuviera profundidad, tres dimensiones en lugar de dos.<br>Entre mayor sea el z-index, más arriba está la capa.</h4>   
+        </article>
+        <br>
+        <br>
+        <section>
+            <header>
+                <h1>Drag and Drop</h1>
+            </header>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+            <img id="drag1" src="camper.png" draggable="true" ondragstart="drag(event)" >
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <header>
+            <h1>Referencias Bibliograficas</h1>
+        </header>
+        <article>
+            <h4> 1. Position. (2020). MDN Web Docs. <a href="https://developer.mozilla.org/es/docs/Web/CSS/positionx">Sitio web</a></h4>
+            <h4> 2. Propiedad visibility. (2006). Uniwebsidad. <a href="https://uniwebsidad.com/libros/referencia-css2/visibility">Sitio web</a></h4>
+            <h4> 3. Cómo utilizar z-index y los contextos de apilamiento. (2018). Juan Padial. <a href="https://cybmeta.com/como-se-utiliza-z-index#:~:text=La%20propiedad%20z%2Dindex%20en,dimensiones%20en%20lugar%20de%20dos.&text=Puede%20haber%20muchos%20motivos%20para%20que%20dos%20elementos%20se%20superpongan.">Sitio web</a></h4>
+            <h4> 4. ¿Cual es la diferencia entre position: relative, position: absolute y position: fixed?. (2018). StackOverflow. <a href="https://es.stackoverflow.com/questions/37930/cual-es-la-diferencia-entre-position-relative-position-absolute-y-position">Sitio web</a></h4>
+        </article>
+            
+        <footer>
+            <h3>Editor de HTML: Brackets</h3>
+            <h3>Enlace al sitio del editor: <a href="http://brackets.io/">Brackets</a></h3>
+        </footer>
+       
+        <meta charset='UTF-8' />
+        <meta name="viewport" content="width=device-width initial-scale=1.0, maximum-scale=1.0">
+        <link rel='stylesheet' href='style.css'/>
+        <script src="funciones.js"></script>
+        <script src="drag_and_drop.js"></script>
+        
+    
+    </body>
+    
+</html>
