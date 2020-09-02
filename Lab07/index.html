@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+    crossorigin="anonymous"></script>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laboratorio 07 Front-End Frameworks</title>
+</head>
+
+<body id="home" class="scrollspy">
+  <!-- Navbar -->
+  <div class="navbar-fixed">
+    <nav class="black">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Laboratorio 07</a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#search">Search</a>
+            </li>
+            <li>
+              <a href="#favourite">Favourite TV Shows</a>
+            </li>
+            <li>
+              <a href="#question">Question</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <ul class="sidenav" id="mobile-nav">
+    <li>
+      <a href="#home">Home</a>
+    </li>
+    <li>
+      <a href="#search">Search</a>
+    </li>
+    <li>
+      <a href="#favourite">Favourite TV Shows</a>
+    </li>
+    <li>
+      <a href="#question">Question</a>
+    </li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+  </ul>
+
+  <!-- Section: Slider -->
+  <section class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/vikings.jpg">
+        <!-- random image -->
+        <div class="caption center-align">
+          <h2>Front-End Frameworks</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Miguel Angel Marines Olvera | A01705317</h5>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Vikings</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/knightfall.jpg">
+        <!-- random image -->
+        <div class="caption left-align">
+          <h2>Front-End Frameworks</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Miguel Angel Marines Olvera | A01705317</h5>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Knightfall</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/lastKingdom.jpg">
+        <!-- random image -->
+        <div class="caption right-align">
+          <h2>Front-End Frameworks</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Miguel Angel Marines Olvera | A01705317</h5>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Last Kingdom</h5>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Section: Search -->
+  <section id="search" class="section section-search black darken-1 white-text center scrollspy">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3>Search TV Shows</h3>
+          <div class="input-field">
+            <input type="text" class="white grey-text autocomplete" id="autocomplete-input" placeholder="Vikings, Knightfall, Last Kingdom, etc...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Section: TV Shows -->
+  <section id="favourite" class="section section-favourite scrollspy">
+    <div class="container">
+      <div class="row">
+        <h4 class="center">
+          <span class="black-text">My Favourites</span> TV Shows</h4>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/vikings.jpg" alt="">
+              <span class="card-title">Vikings</span>
+            </div>
+            <div class="card-content">
+              Las aventuras de Ragnar Lothbrok, un vikingo agricultor, mientras asciende para convertirse en el rey de los vikingos.
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/knightfall.jpg" alt="">
+              <span class="card-title">Knightfall</span>
+            </div>
+            <div class="card-content">
+              Una pista sobre el paradero del Santo Grial envía al caballero templario Landry a una misión de vida o muerte para hallar la copa que Jesucristo usó en la Última Cena.
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/lastKingdom.jpg" alt="">
+              <span class="card-title">Last Kingdom</span>
+            </div>
+            <div class="card-content">
+              El joven Uhtred pierde a su padre sajón en la batalla y su tío Aelfric le roba las tierras y la herencia. El muchacho también se convierte en guerrero, pero su familia sustituta es asesinada y Uhtred se encuentran solo.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Question -->
+  <section id="question" class="section section-follow black darken-2 white-text center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h4>Describe Material Design</h4>
+          <p>Material Design es un sistema de diseño creado por Google para ayudar a los equipos a crear experiencias digitales de alta calidad para Android, iOS, Flutter y la web.<br><br>Material Design tiene tres principios básicos:<br><br>1. Material is the Metaphor: Material Design se inspira en el mundo físico y sus texturas, incluida la forma en que reflejan la luz y proyectan sombras. Las superficies de los materiales reinventan los medios de papel y tinta.<br><br>2. Bold, Graphic, Intentional: Material Design se guía por métodos de diseño de impresión (tipografía, cuadrículas, espacio, escala, color e imágenes) para crear jerarquía, significado y enfoque que sumerjan a los espectadores en la experiencia.<br><br>3. Motion Provides Meaning: Material Design centra la atención y mantiene la continuidad a través de comentarios sutiles y transiciones coherentes. A medida que los elementos aparecen en pantalla, transforman y reorganizan el entorno con interacciones que generan nuevas transformaciones.<br><br><br></p>
+           <p> Referencia: MATERIAL DESIGN. (2020). Google. <a href="https://material.io/design/introduction">Sitio web</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Contact -->
+  <section id="contact" class="section section-contact scrollspy">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card-panel black white-text center">
+            <i class="material-icons">email</i>
+            <h5>Contact Us For More Interesting TV Shows</h5>
+            
+          </div>
+          <ul class="collection with-header">
+            <li class="collection-header">
+              <h4>You Can Watch This TV Shows On:</h4>
+            </li>
+            <li class="collection-item">Netflix</li>
+            <li class="collection-item">History Channel</li>
+            <li class="collection-item">Social Media</li>
+          </ul>
+        </div>
+        <div class="col s12 m6">
+          <div class="card-panel grey lighten-3">
+            <h5>For more interesting recomendations.</h5>
+            <div class="input-field">
+              <input type="text" placeholder="Name">
+            </div>
+            <div class="input-field">
+              <input type="text" placeholder="Email">
+            </div>
+            <div class="input-field">
+              <input type="text" placeholder="Phone">
+            </div>
+            <div class="input-field">
+              <textarea class="materialize-textarea" placeholder="Enter Message"></textarea>
+            </div>
+            <input type="submit" value="Submit" class="btn">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="section black darken-2 white-text center">
+    <p class="flow-text">Miguel Angel Marines Olvera | A01705317</p>
+    <p>Editor de HTML: Brackets</p>
+    <p>Enlace al sitio del editor: <a href="http://brackets.io/">Brackets</a>
+  </footer>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+  <script>
+    // Sidenav
+    const sideNav = document.querySelector('.sidenav');
+    M.Sidenav.init(sideNav, {});
+
+    // Slider
+    const slider = document.querySelector('.slider');
+    M.Slider.init(slider,{
+      indicators: false,
+      height: 500,
+      transition: 500,
+      interval: 6000
+    });
+
+    // Autocomplete
+    const ac = document.querySelector('.autocomplete');
+    M.Autocomplete.init(ac, {
+      data: {
+        "Vikings": null,
+        "Knightfall": null,
+        "Last Kingdom": null,
+        "Game of Thrones": null,
+        "Peaky Blinders": null,
+        "Green Arrow": null,
+        "Black Sails": null,
+      }
+    });
+
+    // Material Boxed
+    const mb = document.querySelectorAll('.materialboxed');
+    M.Materialbox.init(mb, {});
+
+    // ScrollSpy
+    const ss = document.querySelectorAll('.scrollspy');
+    M.ScrollSpy.init(ss, {});
+
+  </script>
+</body>
+
+</html>
