@@ -1,0 +1,83 @@
+<div id="preguntas" class="container ">
+  <ul class="collapsible expandable blue-grey darken-1 white-text">
+    <li>
+      <div class="collapsible-header expandable blue-grey darken-1 white-text"><i class="material-icons">info</i>¿Por qué es una buena práctica separar el controlador de la vista?</div>
+      <div class="collapsible-body">
+      <span><strong>La vista</strong>: Cómo su nombre lo hace entender, contienen el código de la aplicación web que va a producir la visualización de las interfaces de usuario, o sea, el código que permite renderizar los estados de la aplicación en HTML. En las vistas nada más se tienen los códigos HTML y PHP que permiten mostrar la salida.<br><br>
+          
+      <strong>El controlador</strong>: Contiene el código necesario para responder a las acciones que se solicitan en la aplicación, como visualizar un elemento, realizar una compra, una búsqueda de información, etc.<br><br>
+          
+      En realidad el controlador es una capa que sirve de enlace entre las vistas y los modelos, respondiendo a los mecanismos que puedan requerirse para implementar las necesidades de nuestra aplicación. Sin embargo, su responsabilidad no es manipular directamente datos, ni mostrar ningún tipo de salida, sino servir de enlace entre los modelos y las vistas para implementar las diversas necesidades del desarrollo.<br><br>
+          
+      <strong>Es una buena practica separar el controlador de  la vista ya que facilita el mantenimiento y permite una mayor modularidad.</strong></span>
+      <span><br><br>
+      Referencia: https://desarrolloweb.com/articulos/que-es-mvc.html
+      </span>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header expandable blue-grey darken-1 white-text"><i class="material-icons">info</i>Aparte de los arreglos $_POST y $_GET<br> ¿Qué otros arreglos están predefinidos en php y cuál es su función?</div>
+      <div class="collapsible-body">
+        <span>
+        <blockquote>
+          <strong>$_SGLOBALS </strong> Es un array asociativo que contiene las referencias a todas la variables que están definidas en el ámbito global del script.
+        </blockquote>
+        <blockquote>
+          <strong>$_SERVER </strong> Es un array que contiene información, tales como cabeceras, rutas y ubicaciones de script.
+        </blockquote>
+        <blockquote>
+          <strong>$_FILES </strong> Un array asociativo de elementos subidos al script en curso a través del método POST. 
+        </blockquote><blockquote>
+          <strong>$_COOKIE </strong> Una variable tipo array asociativo de variables pasadas al script actual a través de Cookies HTTP.
+        </blockquote>
+        <blockquote>
+          <strong>$_SESSION </strong>Es un array asociativo que contiene variables de sesión disponibles para el script actual.
+        </blockquote>
+        <blockquote>
+          <strong>$_REQUEST </strong> Un array asociativo que por defecto contiene el contenido de $_GET, $_POST y $_COOKIE.
+        </blockquote>
+        <blockquote>
+          <strong>$_ENV </strong>Una variable tipo array asociativo de variables pasadas al script actual a través del método del entorno.
+        </blockquote>
+        <br>Referencia: https://www.php.net/manual/es/reserved.variables.environment.php
+        </span>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header expandable blue-grey darken-1 white-text"><i class="material-icons">info</i>Explora las funciones de php, y describe 2 que no hayas visto en otro lenguaje y que llamen tu atención.</div>
+      <div class="collapsible-body">
+        <span>
+        <blockquote>
+          <strong>apache_request_headers:</strong> Obtiene todas las cabeceras HTTP.
+        </blockquote>
+        <blockquote>
+          <strong>db2_prepare:</strong> Prepara un comando SQL para su ejecución.
+        </blockquote>
+        Referencia:https://www.php.net/manual/es/indexes.functions.php
+        </span>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header expandable blue-grey darken-1 white-text"><i class="material-icons">info</i>¿Qué es XSS y cómo se puede prevenir?</div>
+      <div class="collapsible-body">
+        <span>
+            <blockquote>
+                El cross-site scripting (XSS) es un tipo de vulnerabilidad informática muy común en las aplicaciones web que permite a los atacantes colocar secuencias de comandos maliciosas en páginas web y, a su vez, instalar malware en los navegadores web de los usuarios.
+            </blockquote>
+            <blockquote>
+                Para preevenir el cross-site scripting (XSS):<br><br>
+                
+                Utilizar frameworks seguros que, por diseño, automáticamente codifican el contenido para prevenir XSS, como en Ruby 3.0 o React JS.<br><br>
+                
+                Codificar los datos de requerimientos HTTP no confiables en los campos de salida HTML (cuerpo, atributos, JavaScript, CSS, o URL) resuelve los XSS Reflejados y XSS Almacenados.<br><br>
+                
+                Aplicar codificación sensitiva al contexto, cuando se modifica el documento en el navegador del cliente, ayuda a prevenir XSS DOM. Cuando esta técnica no se puede aplicar, se pueden usar técnicas similares de codificación.<br><br>
+                
+                Habilitar una Política de Seguridad de Contenido (CSP) supone una defensa profunda para la mitigación de vulnerabilidades XSS, asumiendo que no hay otras vulnerabilidades que permitan colocar código malicioso vía inclusión de archivos locales, bibliotecas vulnerables en fuentes conocidas almacenadas en Redes de Distribución de Contenidos (CDN) o localmente.<br><br>
+            </blockquote>
+            Referencia: https://es.godaddy.com/blog/que-es-el-cross-site-scripting-xss-y-como-puedes-evitarlo/
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>
