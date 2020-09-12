@@ -1,0 +1,123 @@
+<div id="ejercicios" class="row">
+    <div class="col s12 m6">
+      <div class="card horizontal">
+        <div class="card-content">
+          <span class="card-title">Ejercicio 1</span>
+    
+            <p>Arreglo 1:</p>
+            <?php 
+                shuffle($arr1);
+                foreach ($arr1 as $value)
+                {
+                    echo $value. ", ";
+                }
+            ?>
+            <blockquote>Promedio: <?= $prom1 ?></blockquote>
+    
+            <p>Arreglo 2:</p>
+            <?php 
+                shuffle($arr2);
+                foreach ($arr2 as $value)
+                {
+                    echo $value. ", ";
+                }
+            ?>
+            <blockquote>Promedio: <?= $prom2 ?></blockquote>
+            
+        </div>
+      </div>
+    </div>
+      
+    <div class="col s12 m6">
+      <div class="card horizontal">
+        <div class="card-content">
+          <span class="card-title">Ejercicio 2</span>
+    
+            <p>Arreglo 1:</p>
+            <?php 
+                shuffle($arr1);
+                foreach ($arr1 as $value)
+                {
+                    echo $value. ", ";
+                }
+            ?>
+            <blockquote>Mediana: <?= $med1 ?></blockquote>
+            
+            <p>Arreglo 2:</p>
+            <?php 
+                shuffle($arr2);
+                foreach ($arr2 as $value)
+                {
+                    echo $value. ", ";
+                }
+            ?>
+            <blockquote>Mediana: <?= $med2 ?></blockquote>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col s12 m6">
+      <div class="card horizontal">
+        <div class="card-content">
+          <span class="card-title">Ejercicio 3</span>
+            <div class="row">
+                
+                <div class="col s12 m6">
+                    <blockquote>
+                    <p>Arreglo 1</p>
+                    <?php
+                        lista($arr1, $prom1, $med1);
+                    ?>
+                    </blockquote>
+                </div>
+                
+                <div class="col s12 m6">
+                    <blockquote>
+                    <p>Arreglo 2</p>
+                    <?php
+                        lista($arr2, $prom2, $med2);
+                    ?>
+                    </blockquote>
+                </div>
+                
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col s12 m6">
+      <div class="card horizontal">
+        <div class="card-content">
+          <span class="card-title">Ejercicio 4</span>
+            <?php 
+                for($i = 0; $i<2;$i++)
+                {
+                    tabla();
+                }                
+            ?> 
+            
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="container">
+            <div class="col s12 m12">
+                <div class="card horizontal">
+                    <div class="card-content">
+                        <span class="card-title">Ejercicio Libre:</span>
+                        
+                        <p>Programa para verificar si un string es un anagrama de otro string dado.<br/><br/>
+                        Un anagrama es un cambio de palabra directo o un juego de palabras, el resultado de reorganizar las letras de una palabra o frase para producir una nueva palabra o frase, usando todas las letras originales exactamente una vez; por ejemplo, la palabra anagrama se puede reorganizar en nagaram</p>
+                        <br>
+                        <?php 
+                            libre()
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>

@@ -1,0 +1,28 @@
+<div id="preguntas" class="container ">
+  <ul class="collapsible expandable blue-grey darken-1 white-text">
+    <li>
+      <div class="collapsible-header expandable blue-grey darken-1 white-text"><i class="material-icons">info</i>¿Qué hace la función phpinfo()?<br>Describe y discute 3 datos que llamen tu atención.</div>
+      <div class="collapsible-body"><span>La función phpinfo() muestra gran cantidad de información sobre el estado actual de PHP. 
+      <br><br>Algunos datos que llamaron mi atención de la función phpinfo() son:<br><br></span>
+          
+      <blockquote>La función phpinfo() permite ver cuál es la ruta absoluta o path de la carpeta pública en nuestro servidor (httpdocs, www, htdocs…), además permite ver la versión de PHP activa, las extensiones de PHP, el entorno PHP, las rutas, el valor de las opciones de configuración locales y generales, las cabeceras HTTP y la licencia de PHP. Además la función permite ver la ubicación de los logs de errores, información sobre el servidor y compilación (si se compiló como módulo) y la versión del Sistema Operativo.</blockquote> 
+          
+      <blockquote>phpinfo() también es una valiosa herramienta de depuración ya que contiene todos los valores EGPCS (Environment, GET, POST, Cookie, Server).</blockquote>
+      
+      <blockquote>Como cada sistema se instala diferente phpinfo() se usa comúnmente para revisar opciones de configuración y variables predefinidas disponibles en un sistema dado.</blockquote> 
+          
+      <blockquote>Referencias:<br>1. https://www.loopeando.com/que-es-y-como-crear-un-phpinfo/#:~:text=phpinfo()%20es%20una%20funci%C3%B3n,se%20utiliza%20con%20bastante%20frecuencia.<br>2. https://www.php.net/manual/es/function.phpinfo.php</blockquote>     
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header expandable blue-grey darken-1 white-text"><i class="material-icons">info</i>¿Qué cambios tendrías que hacer en la configuración del servidor para que pudiera ser apto en un ambiente de producción?</div>
+      <div class="collapsible-body"><span>Para que el servidor pueda ser apto en un ambiente de producción, hay que configurar el script de conexión de datos y la dirección IP a la cual se van a conectar los clientes. En el archivo php.ini, en la sección de error handling and logging, hay que apagar todos los display errors.<br><br>Referencia:<br>1. https://www.codementor.io/php/tutorial/how-to-setup-php-development-production-server <br>2. https://docs.microsoft.com/es-es/aspnet/web-forms/overview/deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-production-environment-for-web-deployment</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header expandable blue-grey darken-1 white-text"><i class="material-icons">info</i>¿Cómo es que si el código está en un archivo con código html que se despliega del lado del cliente, se ejecuta del lado del servidor? Explica.</div>
+      <div class="collapsible-body"><span>El código en un archivo html se despliega del lado del cliente y se ejecuta del lado del servidor, porque el navegador es una especie de aplicación capaz de interpretar las órdenes recibidas en forma de código HTML fundamentalmente y convertirlas en páginas que son el resultado de dicha orden.<br><br>Cuando picamos en un enlace de hipertexto, en realidad lo que pasa es que establecemos una petición de un archivo HTML residente en el servidor (un ordenador que se encuentra continuamente conectado a la red) el cual es enviado e interpretado por nuestro navegador (el cliente).<br><br>Así pues, podemos hablar de lenguajes de lado servidor que son aquellos lenguajes que son reconocidos, ejecutados e interpretados por el propio servidor y que se envían al cliente en un formato comprensible para él. Por otro lado, los lenguajes de lado cliente (entre los cuales no sólo se encuentra el HTML sino también Java y JavaScript los cuales son simplemente incluidos en el código HTML) son aquellos que pueden ser directamente "digeridos" por el navegador y no necesitan un procesamiento previo.
+      <br><br>Referencia: http://www.adelat.org/media/docum/nuke_publico/lenguajes_del_lado_servidor_o_cliente.html</span>
+      </div>
+    </li>
+  </ul>
+</div>
