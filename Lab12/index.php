@@ -1,15 +1,20 @@
-<?php 
-  include("_header.html");  
-  
-  include("_body.html"); 
-  
-  include("_forma.html");
+<?php
 
-  include("_forma_upload.html");
+    if(isset($_POST["nombre"]))
+    {
+        $_SESSION["usuario"] = $_POST["usuario"];
+    }
 
-  include("_preguntas.html");
-  
-  include("_header.html");
-  
-  include("_footer.html"); 
-?> 
+    if(!isset($_SESSION["usuario"]))
+    {
+        $_SESSION["usuario"] = "No hay usuario previo!";
+    }
+
+
+    include("_header.html");
+    include("_body.html");
+    include("_form.html");
+    include("_preguntas.html");
+    include("_footer.html");
+
+?>

@@ -1,27 +1,82 @@
 <?php
-    function comprobar($nombre, $apellido, $edad, $afiliacion, $estado, $ciudad,  $tiempo, $tel, $email)
+
+    session_start();
+    $_SESSION['nombre'] = $_POST['nombre'];
+    $_SESSION['usuario'] = $_POST['usuario'];
+    $_SESSION['email'] = $_POST['email'];
+    $_SESSION['password'] = $_POST['password'];
+    $_SESSION['rep_password'] = $_POST['rep_password'];
+
+    $nombre = htmlspecialchars($_POST["nombre"]);
+    $usuario = htmlspecialchars($_POST["usuario"]);
+    $email = htmlspecialchars($_POST["email"]);
+    $password = htmlspecialchars($_POST["password"]);
+    $rep_password = htmlspecialchars($_POST["rep_password"]);
+
+    $target_dir = "uploads/";
+    $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+    $uploadOk = 1;
+    $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+
+    // Check if image file is a actual image or fake image
+    if(isset($_POST["submit"]))
     {
-        if($tiempo <= 27 && ($estado == "Queretaro" || $estado == "Nuevo Leon" || $estado == "Aguascalientes" || $estado == "Baja California" || $estado == "Baja California Sur" || $estado == "Campeche" || $estado == "Coahuila" || $estado == "Colima" || $estado == "Chiapas" || $estado == "Chihuahua" || $estado == "Durango" || $estado == "Guanajuato" || $estado == "Guerrero" || $estado == "Hidalgo" || $estado == "Jalisco" || $estado == "Michoacan" || $estado == "Estado de Mexico" || $estado == "Ciudad de Mexico" || $estado == "Morelos" || $estado == "Nayarit" || $estado == "Oaxaca" || $estado == "Puebla" || $estado == "Quintana Roo" || $estado == "San Luis Potosi" || $estado == "Sinaloa" || $estado == "Sonora" || $estado == "Tabasco" || $estado == "Tamaulipas" || $estado == "Tlaxcala" || $estado == "Veracruz" || $estado == "Yucatan"|| $estado == "Zacatecas" ))
+        $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+        if($check !== false)
         {
-            $resp = "FELICIDADES!!!";
-            $foto = "https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/check-circle-green-512.png";
-            $msj =  "felicidades ha calificado al Campeonato Nacional de Natación.";
-            
+            echo "File is an image - " . $check["mime"] . ".";
+            $uploadOk = 1;
         }
         else
         {
-            $resp = "Lo sentimos";
-            $foto = "https://cdn.pixabay.com/photo/2017/02/12/21/29/false-2061131_960_720.png";
-            if($tiempo > 27)
-            {
-                $msj =  "lo sentimos no ha calificado al Campeonato Nacional de Natación, porque no dió el tiempo requerido.";
-            }
-            else
-            {
-                $msj =  "lo sentimos no ha calificado al Campeonato Nacional de Natación, porque no habita en un estado de México.";
-            }
-            
+            echo "File is not an image.";
+            $uploadOk = 0;
         }
-        include("_calificacion.html");
     }
+
+    // Check if file already exists
+    if (file_exists($target_file))
+    {
+        echo "Sorry, file already exists.";
+        $uploadOk = 0;
+    }
+
+    // Check file size
+    if ($_FILES["fileToUpload"]["size"] > 500000) 
+    {
+        echo "Sorry, your file is too large.";
+        $uploadOk = 0;
+    }
+
+    // Allow certain file formats
+    if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+    && $imageFileType != "gif" )
+    {
+        echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+        $uploadOk = 0;
+    }
+
+    // Check if $uploadOk is set to 0 by an error
+    if ($uploadOk == 0)
+    {
+        echo "Sorry, your file was not uploaded.";
+        // if everything is ok, try to upload file
+    }
+    else 
+    {
+        if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file))
+        {
+            echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+            $_SESSION["archivo"] = $target_file;
+        }
+        else
+        {
+            echo "Sorry, there was an error uploading your file.";
+        }
+    }
+    
+    include("_header.html");
+    include("_sesion.html");
+    include("_footer.html");
+
 ?>
