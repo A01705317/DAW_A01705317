@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f3f3f3;
+    overflow: hidden;
+}
+.nav-item a{
+  font-family: 'Roboto'"Source Sans Pro Regular" !important;
+  color: #465F74 !important;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 23px;
+}
+#sidebar-container{
+  width: 350px;
+  height: 100vh ;
+ 
+}
+
+#sidebar-container .logo{
+  width: 100%;
+  height: 100px;
+  padding-top: 30px;
+  padding-left: 40px;
+  color: #4E455C;
+  font-family: 'Roboto'"Source Sans Pro";
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+
+}
+
+#sidebar-container .menu{
+  padding-top: 30px;
+  padding-left: 30px;    
+}
+
+#sidebar-container .side-element{
+  height: 54px;
+  width: 100%; 
+  font-family: 'Roboto'"Source Sans Pro Regular";
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 25px;
+
+}
+
+.text-format{
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  color: #9D98A4;
+}
+
+.active, .side-element:hover{
+  background-color: #338CFF !important;
+
+}
+
+.active p, .side-element:hover p, .side-element:hover .chev-con, .active .chev-con {
+  font-weight: bold !important;
+  color: white !important;
+}
+
+#sidebar-container .side-element .chev-con{
+  color: #9D98A4;
+  padding-right: 40px;
+}
+
+#page-content .title-t, #pc-text p{
+  color: #4E455C;
+  font-family: 'Roboto'"Source Sans Pro Regular";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+#place-holder .title-t{
+  padding-top: 40px;
+  color: #4E455C;
+  font-family: 'Roboto'"Source Sans Pro Regular";
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 31px;
+}
+  
+.selected{
+  background-color: #FFFFFF;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.301);
+}
+
+.bot-select{
+  height: 44px;
+  width: 160px;
+  border-radius: 22px;
+  background-color: #9D98A4;
+  font-family: 'Roboto'"Source Sans Pro Regular";
+  font-size: 20px;
+  text-align: center;
+  line-height: 25px;
+  color: white !important;
+}
+
+.selectors{
+
+  padding-top: 50px;
+
+}
+
+.bot-select p{
+  padding-top: 9px;
+}
+
+.ver-bot{
+  height: 44px;
+  width: 90px;
+  border-radius: 22px;
+  background-color: #FAFAFA;
+  font-family: 'Roboto'"Source Sans Pro Regular";
+  font-size: 20px;
+  text-align: center;
+  line-height: 25px;
+  color: #9D98A4 !important;
+  padding-top: 9px;
+}
+
+.gcPlant{
+
+  height: 56px;
+  width: 197px;
+  border-radius: 5px;
+  background-color: #068D9D;
+  font-family: "Source Sans Pro";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 25px;
+  text-align: center;
+  color: #FAFAFA;
+  padding-top: 16px;
+
+}
+
+.ccPlant{
+  height: 56px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: #586061;
+  font-family: "Source Sans Pro";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 25px;
+  text-align: center;
+  color: #FAFAFA;
+  padding-top: 16px;
+}
+
+.viewing{
+  background-color: #006FFF;
+  font-weight: bold !important;
+
+}
+
+
+.card-img-top{
+  height: 160px;
+  width: 220px;
+}
+
+.b-t p, .p-cb p, #sidebar-container p{
+  cursor: pointer;
+}
+.butt-dom{
+  width: 220px;
+  height: 78px;
+  margin-right: 10px;
+  background-color: white;
+  color: grey;
+  border:none;
+  outline: none;
+  border-bottom: 5px solid #BDC1C2;
+}
+
+.butt-dom:focus{
+  border:none;
+  border-bottom: 5px solid #338CFF;
+  outline: none;
+  color: #338CFF;
+  font-weight: bold;
+}
+.nomDom{
+  width: 177px;
+  height: 44px;
+  border-radius: 5px;
+  border: 1px solid #12CBED;
+  font-size: 18px;
+}
+.nomDom:focus{
+  outline: none;
+}
+.confDom{
+  height: 56px;
+  width: 197px;
+  border-radius: 5px;
+  background-color: #068D9D;
+  border:none;
+  outline: none;
+  color: #FFFFFF;
+  font-family: 'Roboto'"Source Sans Pro Regular" !important;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+.confDom:focus{
+  outline: none;
+}
+button:hover{
+  cursor: pointer;
+}
+.fnt{
+  color: #4E455C;
+  font-family: "Source Sans Pro";
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
