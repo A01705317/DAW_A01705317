@@ -1,0 +1,18 @@
+<div id="preguntas" class="container ">
+  <nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Preguntas</a>
+    </div>
+  </nav>
+    
+  <ul class="collapsible expandable blue-grey darken-1 white-text">
+    <li>
+      <div class="collapsible-header expandable blue-grey darken-1 white-text"><i class="material-icons">info</i>¿Por qué es una buena práctica separar el modelo del controlador?<br><br>La vista: Cómo su nombre lo hace entender, contienen el código de la aplicación web que va a producir la visualización de las interfaces de usuario, o sea, el código que permite renderizar los estados de la aplicación en HTML. En las vistas nada más se tienen los códigos HTML y PHP que permiten mostrar la salida.<br><br>El controlador: Contiene el código necesario para responder a las acciones que se solicitan en la aplicación, como visualizar un elemento, realizar una compra, una búsqueda de información, etc.<br><br>En realidad el controlador es una capa que sirve de enlace entre las vistas y los modelos, respondiendo a los mecanismos que puedan requerirse para implementar las necesidades de nuestra aplicación. Sin embargo, su responsabilidad no es manipular directamente datos, ni mostrar ningún tipo de salida, sino servir de enlace entre los modelos y las vistas para implementar las diversas necesidades del desarrollo.<br><br>Es una buena practica separar el controlador de  la vista ya que facilita el mantenimiento y permite una mayor modularidad.</div>
+      
+      <div class="collapsible-header expandable blue-grey darken-1 white-text"><i class="material-icons">info</i>¿Qué es SQL injection y cómo se puede prevenir?<br><br>Inyección SQL es un método de infiltración de código intruso que se vale de una vulnerabilidad informática presente en una aplicación en el nivel de validación de las entradas para realizar operaciones sobre una base de datos.<br><br>Para prevenir es recomendable:<br><br>Convertir siempre el valor a su tipo correspondiente.<br>Parametrizar las consultas SQL.<br>Usar una cuenta con permisos restringidos a la base de datos.<br>No mostrar al usuario la información de error generada por la base de datos.<br>Rechazar las peticiones con caractéres sospechosos.<br>Escapar los caracteres especiales utilizados en las consultas SQL<br>Delimitar los valores de las consultas.<br>Verificar siempre los datos que introduce el usuario.</div>
+        
+
+      <div class="collapsible-header expandable blue-grey darken-1 white-text"><i class="material-icons">info</i>Referencias:<br><br>https://pressroom.hostalia.com/white-papers/ataques-inyeccion-sql/<br><br>https://geeks.ms/gtorres/2010/10/29/tips-para-evitar-sql-injection/<br><br>https://codingornot.com/mvc-modelo-vista-controlador-que-es-y-para-que-sirve<br><br>https://codigofacilito.com/articulos/mvc-model-view-controller-explicado</div>
+    </li>
+  </ul>
+</div>
