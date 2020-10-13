@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" >
+    <title>Log-In Casino</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper grey darken-1">
+            <a href="#" class="brand-logo">Casino</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="panel.php"><?php echo $_SESSION['usuario'];?></a></li>
+                <li><a href="panel.php"><?php echo $_SESSION['rol'];?></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <br><br><br>
+    <div class="container">
+        <div class="row ">
+            
+            <div class="col s4 push-s4">
+                <div class="card-panel">
+                    <span class="text-darken-2"  style = "text-align: center;"><h5>Hoy es: <?php echo date("d/m/Y");?> </h5>
+                        <h5>La hora es: <?php echo date("h:i:sa");?> </h5>
+                    </span>
+                  </div>
+            </div>
+        </div>
+        <br><br><br><br>
+    
+
+   

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Log-In Casino</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper grey darken-1">
+          <a href="#" class="brand-logo">Casino</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="main.html">Log'in</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <br><br><br>
+    <div class="row center-align" id="login">
+        <div class="col s1 m4 offset-m4">
+            <div class="card">
+                <div class="card-action  grey darken-1">
+                    <h3 class="center white-text">Log-In</h3>
+                </div>
+                <div class="card-content">
+                    <form action="index.php" method="POST">
+                        <div class="input-field">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="user_name" type="text" class="validate" name="user_name">
+                            <label for="user_name">User Name</label>
+                        </div><br>
+                        <div class="input-field ">
+                            <i class="material-icons prefix">lock</i>
+                            <input id="password" type="password" class="validate" name="password">
+                            <label for="password">Password</label>
+                        </div><br>
+                        <div id="submit">
+                            <input class="btn-large btn waves-effectwaves-dark  grey darken-1" type="submit" value="Inciar Sesion" name="submit" >
+                        </div>            
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+    <script src="functions.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
