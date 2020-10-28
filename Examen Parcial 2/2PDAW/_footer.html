@@ -1,0 +1,37 @@
+<br><br><br>
+
+<!-- Footer -->
+  <footer id="footer" class="section black darken-2 white-text center">
+    <p class="flow-text">Miguel Angel Marines Olvera | A01705317</p>
+    <p class="flow-text">Examen Parcial 2</p>
+    <p>Editor de HTML: <a href="http://brackets.io/">Brackets</a>
+    <p>Framework: <a href="https://materializecss.com/">Materialize</a>
+  </footer>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="script.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+      
+    // Sidenav
+    const sideNav = document.querySelector('.sidenav');
+    M.Sidenav.init(sideNav, {});
+
+    // Slider
+    const slider = document.querySelector('.slider');
+    M.Slider.init(slider,{
+      indicators: false,
+      height: 500,
+      transition: 500,
+      interval: 6000
+    });
+
+  </script>
+
+</body>
+
+</html>
