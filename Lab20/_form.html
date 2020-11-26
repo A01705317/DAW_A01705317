@@ -1,0 +1,28 @@
+<br id="form"><br><br>
+
+<div class="container ">
+        
+  <nav>
+    <div class="nav-wrapper">
+        <a  href="#" class="brand-logo center">Realizar Acusación</a>
+    </div>
+  </nav>
+    
+  <form action="index.php" method="post">
+        
+    <label>¿Quién crees que es el impostor?</label>
+    <?= select("acusador","tripulante") ?>
+    
+    <br>
+      
+    <label>¿Quién lo acusa? </label>
+    <?= select("acusado","tripulante") ?>
+    
+    <br>
+    <br>
+    
+    <button type="submit" class="btn btn-primary">Registrar Acusación</button>
+  
+  </form>
+    
+</div>
